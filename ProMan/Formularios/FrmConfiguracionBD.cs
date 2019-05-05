@@ -10,6 +10,8 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
 using Npgsql;
+using System.Xml;
+using System.IO;
 
 namespace ProMan.Formularios
 {
@@ -119,7 +121,49 @@ namespace ProMan.Formularios
 
         private void BtnContinuar_Click(object sender, EventArgs e)
         {
-            
+            if (!Directory.Exists("C:\\Conexion\\"))
+            {
+                Directory.CreateDirectory("C:\\Conexion\\");
+            }
+
+            XmlDocument doc = new XmlDocument();
+
+            XmlDeclaration xmlDeclaration = doc.CreateXmlDeclaration("1.0", "UTF-8", null);
+            XmlElement root = doc.DocumentElement;
+            doc.InsertBefore(xmlDeclaration, root);
+
+            XmlElement cuerpo = doc.CreateElement("ConexionBD");
+            doc.AppendChild(cuerpo);
+
+            XmlElement motor = doc.CreateElement("MOTORBD");
+            motor.AppendChild(doc.CreateTextNode(CmbMotor.Text));
+            cuerpo.AppendChild(motor);
+
+            XmlElement servidor = doc.CreateElement("SERVIDOR");
+            servidor.AppendChild(doc.CreateTextNode(TxtServidor.Text));
+            cuerpo.AppendChild(servidor);
+
+            XmlElement nombrebd = doc.CreateElement("NOMBREBD");
+            nombrebd.AppendChild(doc.CreateTextNode(TxtNombreBD.Text));
+            cuerpo.AppendChild(nombrebd);
+
+            XmlElement usuario = doc.CreateElement("USUARIO");
+            usuario.AppendChild(doc.CreateTextNode(TxtUsuario.Text));
+            cuerpo.AppendChild(usuario);
+
+            XmlElement puerto = doc.CreateElement("PUERTO");
+            puerto.AppendChild(doc.CreateTextNode(TxtPuerto.Text));
+            cuerpo.AppendChild(puerto);
+
+            XmlElement pass = doc.CreateElement("PASSWORD");
+            pass.AppendChild(doc.CreateTextNode(TxtContrasena.Text));
+            cuerpo.AppendChild(pass);
+
+            doc.Save("C:\\Conexion\\Conexion.xml");
+
+            this.Hide();
+            FrmPrincipal principal = new FrmPrincipal();
+            principal.Show();
         }
     }
 }
