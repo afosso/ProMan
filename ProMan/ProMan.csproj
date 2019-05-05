@@ -78,6 +78,12 @@
     <Compile Include="Formularios\FrmInicio.Designer.cs">
       <DependentUpon>FrmInicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\FrmProyecto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmProyecto.Designer.cs">
+      <DependentUpon>FrmProyecto.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\FrmSplash.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmHome.resx">
       <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmProyecto.resx">
+      <DependentUpon>FrmProyecto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmSplash.resx">
       <DependentUpon>FrmSplash.cs</DependentUpon>
@@ -132,17 +141,45 @@
     <Content Include="Librerias\LollipoUi.dll" />
     <Content Include="Librerias\MySql.Data.dll" />
     <Content Include="Librerias\Npgsql.dll" />
+    <Content Include="Resource\Collaborator\collaborator128.png" />
+    <Content Include="Resource\Collaborator\collaborator16.png" />
+    <Content Include="Resource\Collaborator\collaborator20.png" />
+    <Content Include="Resource\Collaborator\collaborator24.png" />
+    <Content Include="Resource\Collaborator\collaborator32.png" />
+    <Content Include="Resource\Collaborator\collaborator48.png" />
+    <Content Include="Resource\Collaborator\collaborator64.png" />
+    <Content Include="Resource\Home\home128.png" />
+    <Content Include="Resource\Home\home48.png" />
+    <Content Include="Resource\Home\home64.png" />
+    <Content Include="Resource\Home\home16.png" />
+    <Content Include="Resource\Home\home20.png" />
+    <Content Include="Resource\Home\home24.png" />
+    <Content Include="Resource\Home\home32.png" />
     <Content Include="Resource\imagen.jpg" />
-    <Content Include="Resource\save_black.png" />
-    <Content Include="Resource\save_white.png" />
-    <Content Include="Resource\collaborators.png" />
-    <Content Include="Resource\task.png" />
-    <Content Include="Resource\proyect.png" />
-    <Content Include="Resource\home.png" />
+    <Content Include="Resource\Menu\menu128.png" />
+    <Content Include="Resource\Menu\menu48.png" />
+    <Content Include="Resource\Menu\menu64.png" />
+    <Content Include="Resource\Menu\menu16.png" />
+    <Content Include="Resource\Menu\menu20.png" />
+    <Content Include="Resource\Menu\menu24.png" />
+    <Content Include="Resource\Menu\menu32.png" />
+    <Content Include="Resource\Proyect\proyect128.png" />
+    <Content Include="Resource\Proyect\proyect16.png" />
+    <Content Include="Resource\Proyect\proyect20.png" />
+    <Content Include="Resource\Proyect\proyect24.png" />
+    <Content Include="Resource\Proyect\proyect32.png" />
+    <Content Include="Resource\Proyect\proyect48.png" />
+    <Content Include="Resource\Proyect\proyect64.png" />
     <Content Include="Resource\minimize.png" />
     <Content Include="Resource\maximize.png" />
     <Content Include="Resource\close.png" />
-    <Content Include="Resource\menu1.png" />
+    <Content Include="Resource\Task\task128.png" />
+    <Content Include="Resource\Task\task16.png" />
+    <Content Include="Resource\Task\task20.png" />
+    <Content Include="Resource\Task\task24.png" />
+    <Content Include="Resource\Task\task32.png" />
+    <Content Include="Resource\Task\task48.png" />
+    <Content Include="Resource\Task\task64.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

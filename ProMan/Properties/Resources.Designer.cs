@@ -180,6 +180,16 @@ namespace ProMan.Properties {
         }
         
         /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap task48 {
+            get {
+                object obj = ResourceManager.GetObject("task48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Mensaje del sistema.
         /// </summary>
         internal static string TituloAlerta {

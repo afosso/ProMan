@@ -271,8 +271,6 @@
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Tag = "1001";
             this.pictureBox4.Click += new System.EventHandler(this.AbrirFormulario_Click);
-            this.pictureBox4.MouseLeave += new System.EventHandler(this.CambiarColorPanel_MouseLeave);
-            this.pictureBox4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColorPanel_MouseMove);
             // 
             // PanelSelInicio
             // 
