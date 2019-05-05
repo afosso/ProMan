@@ -1,13 +1,8 @@
-﻿using ProMan.Entidades;
-using ProMan.Formularios;
+﻿using ProMan.Formularios;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ProMan
@@ -23,6 +18,9 @@ namespace ProMan
         }
 
         List<FormularioMdi> listadoFormularios;
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
         #endregion
 
         #region Constructor
@@ -67,12 +65,17 @@ namespace ProMan
         {
             this.WindowState = FormWindowState.Minimized;
         }
+        private void AbrirFormulario_Click(object sender, EventArgs e)
+        {
+            DesactivarSeleccion = Color.Transparent;
+            activarFormulario(Convert.ToInt32(((Control)sender).Tag));
+        }
         #endregion
 
         #region Load
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
-            //activarFormulario(1001);
+            activarFormulario(1001);
         }
         #endregion
 
@@ -84,6 +87,41 @@ namespace ProMan
         private void CambiarColorPanel_MouseLeave(object sender, EventArgs e)
         {
             ((Panel)sender).BackColor = Color.FromArgb(26, 79, 133);
+        }
+        #endregion
+
+        #region Mover Formulario
+        private void PanelHead_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+        private void PanelHead_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+        private void PanelHead_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+        #endregion
+
+        #region DoubleClick
+        private void PanelHead_DoubleClick(object sender, EventArgs e)
+        {
+            if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
         }
         #endregion
 
@@ -102,6 +140,22 @@ namespace ProMan
                 if (tag == 1001)
                 {
                     formularioVisualizar = new FrmHome();
+                    PanelSelInicio.BackColor = Color.FromArgb(128, 191, 255);
+                }
+
+                if (tag == 1002)
+                {
+                    PanelSelProyectos.BackColor = Color.FromArgb(128, 191, 255);
+                }
+
+                if (tag == 1003)
+                {
+                    PanelSelTareas.BackColor = Color.FromArgb(128, 191, 255);
+                }
+
+                if (tag == 1004)
+                {
+                    PanelSelColaboradores.BackColor = Color.FromArgb(128, 191, 255);
                 }
 
                 if (formularioVisualizar != null)
@@ -113,6 +167,26 @@ namespace ProMan
             }
             else
             {
+                if(tag == 1001)
+                {
+                    PanelSelInicio.BackColor = Color.FromArgb(128, 191, 255);
+                }
+
+                if (tag == 1002)
+                {
+                    PanelSelProyectos.BackColor = Color.FromArgb(128, 191, 255);
+                }
+
+                if (tag == 1003)
+                {
+                    PanelSelTareas.BackColor = Color.FromArgb(128, 191, 255);
+                }
+
+                if(tag == 1004)
+                {
+                    PanelSelColaboradores.BackColor = Color.FromArgb(128, 191, 255);
+                }
+
                 formularioActivo.Activate();
             }
             this.Cursor = Cursors.Default;
@@ -122,12 +196,16 @@ namespace ProMan
             listadoFormularios = new List<FormularioMdi>();
             listadoFormularios.Add(new FormularioMdi() { tag = "1001", nombre = "Home", btnReferencia = PanelInicio });
         }
-        #endregion
-
-        private void AbrirFormulario_Click(object sender, EventArgs e)
+        private Color DesactivarSeleccion
         {
-            activarFormulario(Convert.ToInt32(((Control)sender).Tag));
+            set
+            {
+                PanelSelColaboradores.BackColor = value;
+                PanelSelInicio.BackColor = value;
+                PanelSelProyectos.BackColor = value;
+                PanelSelTareas.BackColor = value;
+            }
         }
-        
+        #endregion
     }
 }

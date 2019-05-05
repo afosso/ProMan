@@ -73,9 +73,9 @@ namespace ProMan.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap collaborators {
+        internal static System.Drawing.Bitmap collaborator32 {
             get {
-                object obj = ResourceManager.GetObject("collaborators", resourceCulture);
+                object obj = ResourceManager.GetObject("collaborator32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -83,9 +83,9 @@ namespace ProMan.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap home {
+        internal static System.Drawing.Bitmap home32 {
             get {
-                object obj = ResourceManager.GetObject("home", resourceCulture);
+                object obj = ResourceManager.GetObject("home32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -113,9 +113,9 @@ namespace ProMan.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap menu1 {
+        internal static System.Drawing.Bitmap menu32 {
             get {
-                object obj = ResourceManager.GetObject("menu1", resourceCulture);
+                object obj = ResourceManager.GetObject("menu32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -142,9 +142,9 @@ namespace ProMan.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap proyect {
+        internal static System.Drawing.Bitmap proyect32 {
             get {
-                object obj = ResourceManager.GetObject("proyect", resourceCulture);
+                object obj = ResourceManager.GetObject("proyect32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -152,9 +152,29 @@ namespace ProMan.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap task {
+        internal static System.Drawing.Bitmap proyect48 {
             get {
-                object obj = ResourceManager.GetObject("task", resourceCulture);
+                object obj = ResourceManager.GetObject("proyect48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap proyect64 {
+            get {
+                object obj = ResourceManager.GetObject("proyect64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap task32 {
+            get {
+                object obj = ResourceManager.GetObject("task32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

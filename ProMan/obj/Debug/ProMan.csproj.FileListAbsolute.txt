@@ -14,3 +14,4 @@ C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\Pro
 C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\ProMan.csproj.CopyComplete
 C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\ProMan.exe
 C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\ProMan.pdb
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\ProMan.csprojAssemblyReference.cache
