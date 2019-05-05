@@ -29,53 +29,53 @@
         private void InitializeComponent()
         {
             this.PanelMenu = new System.Windows.Forms.Panel();
+            this.PanelColaboradores = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.panel10 = new System.Windows.Forms.Panel();
+            this.PanelTareas = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.panel8 = new System.Windows.Forms.Panel();
+            this.PanelProyectos = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.PanelInicio = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.TxtNombreApp = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.PanelInicio = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
             this.BtnMaximize = new System.Windows.Forms.PictureBox();
             this.BtnClose = new System.Windows.Forms.PictureBox();
             this.BtnMinimize = new System.Windows.Forms.PictureBox();
             this.BtnMenu = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.PanelMenu.SuspendLayout();
+            this.PanelColaboradores.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.PanelTareas.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.PanelProyectos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PanelInicio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.PanelInicio.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMaximize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMenu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelMenu
             // 
             this.PanelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(79)))), ((int)(((byte)(133)))));
-            this.PanelMenu.Controls.Add(this.panel9);
-            this.PanelMenu.Controls.Add(this.panel7);
-            this.PanelMenu.Controls.Add(this.panel4);
+            this.PanelMenu.Controls.Add(this.PanelColaboradores);
+            this.PanelMenu.Controls.Add(this.PanelTareas);
+            this.PanelMenu.Controls.Add(this.PanelProyectos);
             this.PanelMenu.Controls.Add(this.PanelInicio);
             this.PanelMenu.Controls.Add(this.TxtNombreApp);
             this.PanelMenu.Dock = System.Windows.Forms.DockStyle.Left;
@@ -84,6 +84,193 @@
             this.PanelMenu.Name = "PanelMenu";
             this.PanelMenu.Size = new System.Drawing.Size(200, 555);
             this.PanelMenu.TabIndex = 0;
+            // 
+            // PanelColaboradores
+            // 
+            this.PanelColaboradores.Controls.Add(this.label4);
+            this.PanelColaboradores.Controls.Add(this.pictureBox3);
+            this.PanelColaboradores.Controls.Add(this.panel10);
+            this.PanelColaboradores.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PanelColaboradores.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelColaboradores.Location = new System.Drawing.Point(0, 200);
+            this.PanelColaboradores.Name = "PanelColaboradores";
+            this.PanelColaboradores.Size = new System.Drawing.Size(200, 50);
+            this.PanelColaboradores.TabIndex = 5;
+            this.PanelColaboradores.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            this.PanelColaboradores.MouseLeave += new System.EventHandler(this.CambiarColorPanel_MouseLeave);
+            this.PanelColaboradores.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColorPanel_MouseMove);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(53, 17);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(108, 18);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Colaboradores";
+            this.label4.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::ProMan.Properties.Resources.collaborators;
+            this.pictureBox3.Location = new System.Drawing.Point(15, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox3.TabIndex = 1;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            // 
+            // panel10
+            // 
+            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(79)))), ((int)(((byte)(133)))));
+            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel10.Location = new System.Drawing.Point(0, 0);
+            this.panel10.Name = "panel10";
+            this.panel10.Size = new System.Drawing.Size(10, 50);
+            this.panel10.TabIndex = 0;
+            // 
+            // PanelTareas
+            // 
+            this.PanelTareas.Controls.Add(this.label3);
+            this.PanelTareas.Controls.Add(this.pictureBox2);
+            this.PanelTareas.Controls.Add(this.panel8);
+            this.PanelTareas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PanelTareas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelTareas.Location = new System.Drawing.Point(0, 150);
+            this.PanelTareas.Name = "PanelTareas";
+            this.PanelTareas.Size = new System.Drawing.Size(200, 50);
+            this.PanelTareas.TabIndex = 4;
+            this.PanelTareas.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            this.PanelTareas.MouseLeave += new System.EventHandler(this.CambiarColorPanel_MouseLeave);
+            this.PanelTareas.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColorPanel_MouseMove);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(53, 17);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(56, 18);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Tareas";
+            this.label3.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::ProMan.Properties.Resources.task;
+            this.pictureBox2.Location = new System.Drawing.Point(15, 9);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            // 
+            // panel8
+            // 
+            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(79)))), ((int)(((byte)(133)))));
+            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel8.Location = new System.Drawing.Point(0, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(10, 50);
+            this.panel8.TabIndex = 0;
+            // 
+            // PanelProyectos
+            // 
+            this.PanelProyectos.Controls.Add(this.label2);
+            this.PanelProyectos.Controls.Add(this.pictureBox1);
+            this.PanelProyectos.Controls.Add(this.panel6);
+            this.PanelProyectos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PanelProyectos.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelProyectos.Location = new System.Drawing.Point(0, 100);
+            this.PanelProyectos.Name = "PanelProyectos";
+            this.PanelProyectos.Size = new System.Drawing.Size(200, 50);
+            this.PanelProyectos.TabIndex = 3;
+            this.PanelProyectos.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            this.PanelProyectos.MouseLeave += new System.EventHandler(this.CambiarColorPanel_MouseLeave);
+            this.PanelProyectos.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColorPanel_MouseMove);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(53, 17);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 18);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Proyectos";
+            this.label2.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::ProMan.Properties.Resources.proyect;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 9);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(79)))), ((int)(((byte)(133)))));
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel6.Location = new System.Drawing.Point(0, 0);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(10, 50);
+            this.panel6.TabIndex = 0;
+            // 
+            // PanelInicio
+            // 
+            this.PanelInicio.Controls.Add(this.label1);
+            this.PanelInicio.Controls.Add(this.pictureBox4);
+            this.PanelInicio.Controls.Add(this.panel5);
+            this.PanelInicio.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.PanelInicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelInicio.Location = new System.Drawing.Point(0, 50);
+            this.PanelInicio.Name = "PanelInicio";
+            this.PanelInicio.Size = new System.Drawing.Size(200, 50);
+            this.PanelInicio.TabIndex = 1;
+            this.PanelInicio.Tag = "1001";
+            this.PanelInicio.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            this.PanelInicio.MouseLeave += new System.EventHandler(this.CambiarColorPanel_MouseLeave);
+            this.PanelInicio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColorPanel_MouseMove);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(53, 17);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(47, 18);
+            this.label1.TabIndex = 2;
+            this.label1.Tag = "1001";
+            this.label1.Text = "Inicio";
+            this.label1.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::ProMan.Properties.Resources.home;
+            this.pictureBox4.Location = new System.Drawing.Point(15, 9);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox4.TabIndex = 1;
+            this.pictureBox4.TabStop = false;
+            this.pictureBox4.Tag = "1001";
+            this.pictureBox4.Click += new System.EventHandler(this.AbrirFormulario_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel5.Location = new System.Drawing.Point(0, 0);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(10, 50);
+            this.panel5.TabIndex = 0;
             // 
             // TxtNombreApp
             // 
@@ -119,151 +306,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(96, 32);
             this.panel1.TabIndex = 1;
-            // 
-            // panel3
-            // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(200, 32);
-            this.panel3.Margin = new System.Windows.Forms.Padding(4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(651, 523);
-            this.panel3.TabIndex = 2;
-            // 
-            // PanelInicio
-            // 
-            this.PanelInicio.Controls.Add(this.label1);
-            this.PanelInicio.Controls.Add(this.pictureBox4);
-            this.PanelInicio.Controls.Add(this.panel5);
-            this.PanelInicio.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.PanelInicio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelInicio.Location = new System.Drawing.Point(0, 50);
-            this.PanelInicio.Name = "PanelInicio";
-            this.PanelInicio.Size = new System.Drawing.Size(200, 50);
-            this.PanelInicio.TabIndex = 1;
-            this.PanelInicio.MouseLeave += new System.EventHandler(this.CambiarColorPanel_MouseLeave);
-            this.PanelInicio.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColorPanel_MouseMove);
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(191)))), ((int)(((byte)(255)))));
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel5.Location = new System.Drawing.Point(0, 0);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(10, 50);
-            this.panel5.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(53, 17);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(47, 18);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Inicio";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.label2);
-            this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Controls.Add(this.panel6);
-            this.panel4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel4.Location = new System.Drawing.Point(0, 100);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(200, 50);
-            this.panel4.TabIndex = 3;
-            this.panel4.MouseLeave += new System.EventHandler(this.CambiarColorPanel_MouseLeave);
-            this.panel4.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColorPanel_MouseMove);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(53, 17);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 18);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Proyectos";
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(79)))), ((int)(((byte)(133)))));
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel6.Location = new System.Drawing.Point(0, 0);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(10, 50);
-            this.panel6.TabIndex = 0;
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.label3);
-            this.panel7.Controls.Add(this.pictureBox2);
-            this.panel7.Controls.Add(this.panel8);
-            this.panel7.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel7.Location = new System.Drawing.Point(0, 150);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(200, 50);
-            this.panel7.TabIndex = 4;
-            this.panel7.MouseLeave += new System.EventHandler(this.CambiarColorPanel_MouseLeave);
-            this.panel7.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColorPanel_MouseMove);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(53, 17);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Tareas";
-            // 
-            // panel8
-            // 
-            this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(79)))), ((int)(((byte)(133)))));
-            this.panel8.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel8.Location = new System.Drawing.Point(0, 0);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(10, 50);
-            this.panel8.TabIndex = 0;
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.label4);
-            this.panel9.Controls.Add(this.pictureBox3);
-            this.panel9.Controls.Add(this.panel10);
-            this.panel9.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.panel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel9.Location = new System.Drawing.Point(0, 200);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(200, 50);
-            this.panel9.TabIndex = 5;
-            this.panel9.MouseLeave += new System.EventHandler(this.CambiarColorPanel_MouseLeave);
-            this.panel9.MouseMove += new System.Windows.Forms.MouseEventHandler(this.CambiarColorPanel_MouseMove);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(53, 17);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 18);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Colaboradores";
-            // 
-            // panel10
-            // 
-            this.panel10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(79)))), ((int)(((byte)(133)))));
-            this.panel10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel10.Location = new System.Drawing.Point(0, 0);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(10, 50);
-            this.panel10.TabIndex = 0;
             // 
             // BtnMaximize
             // 
@@ -311,41 +353,13 @@
             this.BtnMenu.TabStop = false;
             this.BtnMenu.Click += new System.EventHandler(this.BtnMenu_Click);
             // 
-            // pictureBox3
+            // panel3
             // 
-            this.pictureBox3.Image = global::ProMan.Properties.Resources.collaborators;
-            this.pictureBox3.Location = new System.Drawing.Point(15, 9);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox3.TabIndex = 1;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::ProMan.Properties.Resources.task;
-            this.pictureBox2.Location = new System.Drawing.Point(15, 9);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox2.TabIndex = 1;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::ProMan.Properties.Resources.proyect;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 9);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::ProMan.Properties.Resources.home;
-            this.pictureBox4.Location = new System.Drawing.Point(15, 9);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(32, 32);
-            this.pictureBox4.TabIndex = 1;
-            this.pictureBox4.TabStop = false;
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel3.Location = new System.Drawing.Point(200, 505);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(651, 50);
+            this.panel3.TabIndex = 2;
             // 
             // FrmPrincipal
             // 
@@ -357,29 +371,31 @@
             this.Controls.Add(this.PanelMenu);
             this.Font = new System.Drawing.Font("Garamond", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FrmPrincipal";
+            this.Load += new System.EventHandler(this.FrmPrincipal_Load);
             this.PanelMenu.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
+            this.PanelColaboradores.ResumeLayout(false);
+            this.PanelColaboradores.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.PanelTareas.ResumeLayout(false);
+            this.PanelTareas.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.PanelProyectos.ResumeLayout(false);
+            this.PanelProyectos.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.PanelInicio.ResumeLayout(false);
             this.PanelInicio.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.BtnMaximize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMinimize)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.BtnMenu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -389,7 +405,6 @@
         private System.Windows.Forms.Panel PanelMenu;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox BtnMenu;
-        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label TxtNombreApp;
         private System.Windows.Forms.PictureBox BtnMinimize;
         private System.Windows.Forms.PictureBox BtnClose;
@@ -399,17 +414,18 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel PanelProyectos;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Panel PanelTareas;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Panel panel9;
+        private System.Windows.Forms.Panel PanelColaboradores;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel10;
+        private System.Windows.Forms.Panel panel3;
     }
 }

@@ -57,11 +57,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entidades\Colaborador.cs" />
+    <Compile Include="Entidades\Proyecto.cs" />
+    <Compile Include="Entidades\Tarea.cs" />
     <Compile Include="Formularios\FrmConfiguracionBD.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Formularios\FrmConfiguracionBD.Designer.cs">
       <DependentUpon>FrmConfiguracionBD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\FrmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\FrmHome.Designer.cs">
+      <DependentUpon>FrmHome.cs</DependentUpon>
     </Compile>
     <Compile Include="Formularios\FrmInicio.cs">
       <SubType>Form</SubType>
@@ -85,6 +94,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Formularios\FrmConfiguracionBD.resx">
       <DependentUpon>FrmConfiguracionBD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\FrmHome.resx">
+      <DependentUpon>FrmHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\FrmSplash.resx">
       <DependentUpon>FrmSplash.cs</DependentUpon>
