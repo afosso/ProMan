@@ -93,6 +93,16 @@ namespace ProMan.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap imagen {
+            get {
+                object obj = ResourceManager.GetObject("imagen", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap maximize {
             get {
                 object obj = ResourceManager.GetObject("maximize", resourceCulture);
@@ -121,6 +131,15 @@ namespace ProMan.Properties {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Proyect Manager.
+        /// </summary>
+        internal static string NombreApp {
+            get {
+                return ResourceManager.GetString("NombreApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
         internal static System.Drawing.Bitmap proyect {
@@ -137,6 +156,15 @@ namespace ProMan.Properties {
             get {
                 object obj = ResourceManager.GetObject("task", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Mensaje del sistema.
+        /// </summary>
+        internal static string TituloAlerta {
+            get {
+                return ResourceManager.GetString("TituloAlerta", resourceCulture);
             }
         }
     }
