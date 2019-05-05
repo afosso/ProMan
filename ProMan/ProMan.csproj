@@ -90,6 +90,10 @@
     <Content Include="Librerias\LollipoUi.dll" />
     <Content Include="Librerias\MySql.Data.dll" />
     <Content Include="Librerias\Npgsql.dll" />
+    <Content Include="Resource\collaborators.png" />
+    <Content Include="Resource\task.png" />
+    <Content Include="Resource\proyect.png" />
+    <Content Include="Resource\home.png" />
     <Content Include="Resource\minimize.png" />
     <Content Include="Resource\maximize.png" />
     <Content Include="Resource\close.png" />

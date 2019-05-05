@@ -30,5 +30,37 @@ namespace ProMan
                 TxtNombreApp.Text = "Proyect Manager";
             }
         }
+
+        private void CambiarColorPanel_MouseMove(object sender, MouseEventArgs e)
+        {
+            ((Panel)sender).BackColor = Color.FromArgb(64, 96, 128);
+        }
+
+        private void CambiarColorPanel_MouseLeave(object sender, EventArgs e)
+        {
+            ((Panel)sender).BackColor = Color.FromArgb(26, 79, 133);
+        }
+
+        private void BtnClose_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void BtnMaximize_Click(object sender, EventArgs e)
+        {
+            if(this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }
+        }
+
+        private void BtnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }
