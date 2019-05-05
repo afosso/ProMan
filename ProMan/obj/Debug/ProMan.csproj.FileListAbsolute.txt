@@ -1,0 +1,11 @@
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\bin\Debug\ProMan.exe.config
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\bin\Debug\ProMan.exe
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\bin\Debug\ProMan.pdb
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\bin\Debug\LollipoUi.dll
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\ProMan.FrmPrincipal.resources
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\ProMan.Properties.Resources.resources
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\ProMan.csproj.GenerateResource.cache
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\ProMan.csproj.CoreCompileInputs.cache
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\ProMan.csproj.CopyComplete
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\ProMan.exe
+C:\Users\NERAD\Documents\Visual Studio 2017\Projects\ProMan\ProMan\obj\Debug\ProMan.pdb
